@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+/* font-family: 'Fraunces', serif;
+font-family: 'Outfit', sans-serif; */
+body {
+  background-color: #d5e1ef;
+}
+/* Define the flex container */
+.flex-container {
+  width: 300px;
+  padding-top: 10px;
+  height: 400px;
+  margin: 100px auto;
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.item-1 {
+  background-image: url('./images/image-qr-code.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 280px;
+  border-radius: 10px;
+}
+.item-2 h2 {
+  font-family: 'Outfit', sans-serif;
+  width: 250px;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--Dark-blue);
+}
+.item-2 p {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-family: 'Outfit', sans-serif;
+  width: 245px;
+  font-size: 15px;
+  margin-top: 15px;
+  color: var(--Grayish-blue);
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .flex-container {
+    width: 250px;
+  }
+  .item-1 {
+    height: 250px;
+    width: 230px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .flex-container {
+    width: 200px;
+  }
+  .item-1 {
+    height: 250px;
+    width: 190px;
+    border-radius: 10px;
+  }
+  .item-2 h2 {
+    font-family: 'Outfit', sans-serif;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--Dark-blue);
+    margin: 20px auto;
+  }
+  .item-2 p {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    width: 150px;
+    font-size: 15px;
+    margin-top: 15px;
+    color: var(--Grayish-blue);
+    text-align: center;
+  }
+}
